@@ -31,11 +31,13 @@ def botRetweetHashtag(listHashtag):
             search_query = "#" + hashtag + " -filter:retweets -filter:replies"
             # -filter:retweets
             tweets = tweepy.Cursor(api.search_tweets, q=search_query, lang="en").items(1)
-
+        
             for tweet in tweets:
                 print(tweet.text)
                 api.retweet(tweet.id) 
-                print('Comment\n\n')
+                print('Comment\n')
+                api.create_friendship(user_id=tweet.user.id)
+                print('Account follow-up')
 
         except Exception as e1:
             print('error', e1)
