@@ -13,6 +13,7 @@ autherticator.set_access_token(access_token, access_token_secret)
 api = tweepy.API(autherticator)
 
 # Be the first comment of a tweet of a account. Get the last tweet of a account and check if the BOT has already reply or not  
+#The Twitter API is subject to rate limits per minute and per hour. Check the latest updates to adjust the waiting times between each request.
 def firstReply(username):
 
     delaybetweenRequest = 1
