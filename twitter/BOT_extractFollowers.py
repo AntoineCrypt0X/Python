@@ -39,7 +39,7 @@ def botExtractFollowers(username):
     else:
         a = 1
      
-     #we load the last cell filled
+     #we load the last cell filled and the last follower page treated (cursor)
     _index = sheet['B2'].value
     if _index is None:
         _index=2
