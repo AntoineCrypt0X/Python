@@ -15,6 +15,7 @@ autherticator.set_access_token(access_token, access_token_secret)
 api = tweepy.API(autherticator)
 
 # Like / Retweet the last tweet of a list of twitter Accounts
+#The Twitter API is subject to rate limits per minute and per hour. Check the latest updates to adjust the waiting times between each request.
 def botLikeRetweetInfluencer():
 
     chemin = "yourExcelPath.xlsx"
