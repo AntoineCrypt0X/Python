@@ -14,7 +14,7 @@ api = tweepy.API(autherticator)
 
 
 # Retweet a tweet that contains a hashtag
-
+#The Twitter API is subject to rate limits per minute and per hour. Check the latest updates to adjust the waiting times between each request.
 def botRetweetHashtag(listHashtag):
 
     #parametres d'attente
