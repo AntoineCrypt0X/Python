@@ -13,7 +13,8 @@ autherticator= tweepy.OAuthHandler(api_key, api_key_secret)
 autherticator.set_access_token(access_token, access_token_secret)
 api = tweepy.API(autherticator)
 
-
+# extract the followers from an account. 
+#The Twitter API is subject to rate limits per minute and per hour. Check the latest updates to adjust the waiting times between each request.
 def botExtractFollowers(username):
 
     #we load the Excel if it exists(in case the BOT has stopped), else we create it.
