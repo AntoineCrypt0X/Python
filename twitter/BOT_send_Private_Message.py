@@ -15,7 +15,7 @@ api = tweepy.API(autherticator)
 
 
 # send private message to a list of account that has been extracted
-
+#The Twitter API is subject to rate limits per minute and per hour. Check the latest updates to adjust the waiting times between each request.
 def sendlist():
 
     print(f"\n{datetime.datetime.now()}\n")
