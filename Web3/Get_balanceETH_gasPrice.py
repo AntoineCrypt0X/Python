@@ -9,7 +9,6 @@ def getbalanceETH(wallet_):
 
     # Convertir la balance de wei à ether
     balance_eth = web3.fromWei(balance_wei, 'ether')
-
     print(f'Balance : {round(balance_eth,5)} ETH')
     return balance_eth
 
