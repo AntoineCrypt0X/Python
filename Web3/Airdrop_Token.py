@@ -16,7 +16,7 @@ private_key_airdrop = 'walletprivateKey'
 
 #Automate airdrop of 1 token to a list of address in an Excel file, 100 by 100 with the function Send_Token_from_List. Check the smart contract in the Github-Solidity section
 def airdrop():
-    chemin = 'C:/Users/Administrator/Downloads/holdersairdrop.csv'
+    chemin = 'yourCSVpath.csv'
 
     list_address = []
     List_list_address = []
