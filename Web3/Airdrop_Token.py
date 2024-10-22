@@ -69,11 +69,11 @@ def airdrop():
                     #print(json_obj)
                     print("hash",json_obj[len(json_obj)-4])
                     tx_transaction = web3.eth.sendRawTransaction(signed_txn.rawTransaction)
-                    #print(tx_transaction)
                     print(str(i),"airdrop ok")
 
                 except Exception as e1:
                     print('error1', e1)
+                    print(str(i),"error")
                 else:
                     a = 1
 
