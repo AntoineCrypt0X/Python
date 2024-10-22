@@ -25,7 +25,7 @@ token_address="contractAddressToken"
 wmatic_add="0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270"
 
 def getAmountOutMatictokens(qtyMatic):
-    getAmountsOut = contract.functions.getAmountsOut(qtyMatic * 10**18,[wmatic_add,token_address]).call()
+    getAmountsOut = contract.functions.getAmountsOut(qtyMatic * 1000000000000000000,[wmatic_add,token_address]).call()
     #print(getAmountsOut[1])
     return getAmountsOut
 #getAmountOut(100)
