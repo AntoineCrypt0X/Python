@@ -18,7 +18,7 @@ wmatic_add="0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270"
 
 #function that returns the quantity of token purchased with 1 MATIC
 def getAmountOutMatictokens(qtyMatic):
-    getAmountsOut = contract.functions.getAmountsOut(qtyMatic*1000000000000000000,[wmatic_add,token_address]).call()
+    getAmountsOut = contract.functions.getAmountsOut(qtyMatic * 10**18,[wmatic_add,token_address]).call()
     print(getAmountsOut[1])
     return getAmountsOut
 #getAmountOutMatictokens(1)
@@ -34,7 +34,7 @@ def checkReserve():
 
     while True:
         try:
-            amounts_out = contract.functions.getAmountsOut(1000000000000000000,[wmatic_add,token_address]).call()
+            amounts_out = contract.functions.getAmountsOut(10**18,[wmatic_add,token_address]).call()
             amounts_out=amounts_out[1]
             print("Token amount for 1 Matic", amounts_out)
             
