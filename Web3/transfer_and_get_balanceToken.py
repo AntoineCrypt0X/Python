@@ -16,7 +16,6 @@ def getBalance(address):
     balanceEther = callBalance / 10**18
     return balanceEther
 
-
 def transfer(from_address, from_privateKey, to_address, amount):
 
     balance_from=getBalance(from_address)
