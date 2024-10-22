@@ -32,13 +32,12 @@ def getAmountOutMatictokens(qtyMatic):
 
 def getbalanceMatic(_wallet):
     callBalance = contract_Matic.functions.balanceOf(_wallet).call()
-    #print(callBalance/1000000000000000000)
     return callBalance/10**18
 #getbalanceMatic()
 
 def getbalanceToken(_wallet):
     callBalance = contract_Token.functions.balanceOf(_wallet).call()
-    return callBalance
+    return callBalance/10**18
 #getbalanceToken()
 
 
