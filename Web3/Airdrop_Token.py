@@ -61,12 +61,9 @@ def airdrop():
                         'from': wallet_airdrop,
                         'nonce': nonce,
                     })
-                    #print(transaction)
                     signed_txn = web3.eth.account.signTransaction(transaction, private_key=private_key_airdrop)
-                    #print(signed_txn)
                     tx_json = Web3.toJSON(signed_txn)
                     json_obj = json.loads(tx_json)
-                    #print(json_obj)
                     print("hash",json_obj[len(json_obj)-4])
                     tx_transaction = web3.eth.sendRawTransaction(signed_txn.rawTransaction)
                     print(str(i),"airdrop ok")
