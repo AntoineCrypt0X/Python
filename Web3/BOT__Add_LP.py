@@ -28,19 +28,15 @@ def getAmountOutMatictokens(qtyMatic):
     getAmountsOut = contract.functions.getAmountsOut(qtyMatic * 1000000000000000000,[wmatic_add,token_address]).call()
     #print(getAmountsOut[1])
     return getAmountsOut
-#getAmountOut(100)
 
 def getbalanceMatic(_wallet):
     callBalance = contract_Matic.functions.balanceOf(_wallet).call()
     return callBalance/10**18
-#getbalanceMatic()
 
 def getbalanceToken(_wallet):
     callBalance = contract_Token.functions.balanceOf(_wallet).call()
     return callBalance/10**18
-#getbalanceToken()
-
-
+    
 def add_LP():
 
     valueETH=100
