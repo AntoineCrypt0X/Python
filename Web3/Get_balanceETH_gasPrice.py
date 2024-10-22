@@ -12,13 +12,10 @@ def getbalanceETH(wallet_):
 
     print(f'Balance : {round(balance_eth,5)} ETH')
     return balance_eth
-#getbalanceETH(walletETH)
 
 def getCurrentGasPrice():
 
     gas = web3.eth.gas_price
     print("gas_", gas_)
     return gas
-
-#getCurrentGasPrice()
 
