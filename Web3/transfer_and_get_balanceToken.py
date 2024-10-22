@@ -48,11 +48,9 @@ def transfer(from_address, from_privateKey, to_address, amount):
         print(signed_txn)
         tx_json = Web3.toJSON(signed_txn)
         json_obj = json.loads(tx_json)
-        # print(json_obj)
         hash = json_obj[len(json_obj) - 4]
-        print("hash", hash)
+        print("Transaction hash", hash)
         tx_transaction = web3.eth.sendRawTransaction(signed_txn.rawTransaction)
-        #print(tx_transaction)
 
     else:
         print("insufficient balance")
