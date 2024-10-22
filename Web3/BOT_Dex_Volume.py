@@ -56,7 +56,7 @@ def getbalanceMatic(wallet):
 
 def getbalanceToken(wallet):
     callBalance = contract_Token.functions.balanceOf(wallet).call()
-    return callBalance
+    return callBalance/10**18
 
 #Volume BOT: BOT that swap Token to Matic, then swap Matic to Token. With random variables on the amount and time between each swap transaction.
 def Volume_BOT():
