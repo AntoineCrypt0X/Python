@@ -13,7 +13,7 @@ contract = web3.eth.contract(address = address_ct , abi = abi)
 def getBalance(address):
 
     callBalance = contract.functions.balanceOf(address).call()
-    balanceEther = callBalance / 1000000000000000000
+    balanceEther = callBalance / 10**18
     return balanceEther
 
 
