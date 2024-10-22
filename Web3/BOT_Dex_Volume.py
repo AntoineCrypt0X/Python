@@ -43,7 +43,7 @@ def gettimestamp():
 
 #Qty Matic in Ether as parameters
 def getAmountOutMatictokens(qtyMatic):
-    getAmountsOut = contract.functions.getAmountsOut(qtyMatic*10**18,[wmatic_add,token_address]).call()
+    getAmountsOut = contract.functions.getAmountsOut(qtyMatic*1000000000000000000,[wmatic_add,token_address]).call()
     return getAmountsOut
 
 def getAmountOuttokensMatic(qtyTokens):
