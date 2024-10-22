@@ -2,7 +2,7 @@ import time
 from web3 import Web3
 import json
 
-#import your API request, ex "https://eth-mainnet.g.alchemy.com/v2/" or infura
+#import your API request, ex "https://polygon-mainnet.g.alchemy.com/v2/" or infura
 web3=Web3(Web3.HTTPProvider('yourAPI'))
 
 #Router Uniswap V2 polygon network
