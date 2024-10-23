@@ -57,9 +57,7 @@ def sendlist():
         except Exception as e1:
             print('error', e1)
             # return e1
-        else:
-            a=1
-
-        time.sleep(30)
-
+        finally:
+            time.sleep(30)
+            
 sendlist()
