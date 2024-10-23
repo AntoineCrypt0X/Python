@@ -73,7 +73,5 @@ def checkReserve():
         except Exception as e1:
             print('error', e1)
             time.sleep(1)
-        else:
-            a = 1
 
 checkReserve()
