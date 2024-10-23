@@ -71,8 +71,8 @@ def airdrop():
                 except Exception as e1:
                     print('error1', e1)
                     print(str(i),"error")
-                else:
-                    a = 1
+                finally:
+                    time.sleep(delaybetweenAction) 
 
                 time.sleep(60)
 
