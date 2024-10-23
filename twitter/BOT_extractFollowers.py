@@ -37,8 +37,6 @@ def botExtractFollowers(username):
         sheet['B3'] = "column"
         sheet['C1'] = "screen_name"
         wb.save(path_excel)
-    else:
-        a = 1
      
      #we load the last cell filled and the last follower page treated (cursor)
     _index = sheet['B2'].value
