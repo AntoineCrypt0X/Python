@@ -69,8 +69,6 @@ def firstReply(username):
             print('error', e)
             # return e
             print("Already replied or error")
-        else:
-            a = 2
 
         time.sleep(delaybetweenRequest)
 
