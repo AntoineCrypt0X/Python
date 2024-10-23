@@ -70,8 +70,6 @@ def firstreply(ListAccount):
                 print('error', e)
                 # return e
                 print("Already replied or error")
-            else:
-                a = 2
 
         print(str(treated_tweet_id))
         time.sleep(delaybetweenAction)
