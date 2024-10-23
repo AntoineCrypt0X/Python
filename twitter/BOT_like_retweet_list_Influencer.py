@@ -74,16 +74,12 @@ def botLikeRetweetInfluencer():
                         print('error', e1)
                         # return e1
                         print("Already Liked or Retweet")
-                    else:
-                        a = 1
 
                     time.sleep(delaybetweenAction)
 
             except Exception as e2:
                 print('error', e2)
                 # return e2
-            else:
-                a = 2
 
             countTweet = countTweet + 1
             print("Ratio Tweet Liked: " + str(countlike) + "/" + str(countTweet))
