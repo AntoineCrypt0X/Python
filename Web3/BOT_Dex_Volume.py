@@ -153,15 +153,12 @@ def Volume_BOT():
                 print("hash", json_obj[len(json_obj) - 4])
                 tx_transaction = web3.eth.sendRawTransaction(signed_txn.rawTransaction)
 
-                rdtime = random.randrange(-10, 10)
-                time.sleep(300+rdtime)
-
         except Exception as e2:
             print('error2', e2)
-            rdtime = random.randrange(-10, 10)
-            time.sleep(300+rdtime)
-        else:
-            a = 1
+            
+        finally:
+             rdtime = random.randrange(-10, 10)
+             time.sleep(300+rdtime) 
         
 
 Volume_BOT()
