@@ -104,6 +104,9 @@ def Volume_BOT():
                 json_obj = json.loads(tx_json)
                 print("hash", json_obj[len(json_obj) - 4])
                 tx_transaction = web3.eth.sendRawTransaction(signed_txn.rawTransaction)
+                
+            else:
+                print("insufficient balance Token")
 
         except Exception as e1:
             print('error1', e1)
