@@ -47,10 +47,6 @@ def BOT_post_message(chatId):
         except Exception as e1:
             print('error1', e1)
 
-        else:
-             a = 1
-
-        time.sleep(delaybetweenAction)
-
-
+        finally:
+             time.sleep(delaybetweenAction)     
 
