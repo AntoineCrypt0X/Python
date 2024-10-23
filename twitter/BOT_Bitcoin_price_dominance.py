@@ -27,8 +27,7 @@ def current_price(coin, exchange):
 
     except Exception as e1:
         print('error', e1)
-    else:
-        a = 1
+        
     return 0
 #current_price("BTC","binance")
 
@@ -47,8 +46,6 @@ def FearandGreed():
 
     except Exception as e1:
         print('error', e1)
-    else:
-        a = 1
 
 #FearandGreed()
 
@@ -70,8 +67,6 @@ def BitcoinDominance():
             print('error', e1)
             # return e1
             print("Already tweeted or error")
-        else:
-             a=1
 
         time.sleep(1800)
 
