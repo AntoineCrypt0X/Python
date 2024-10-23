@@ -60,8 +60,6 @@ def tweeter():
             print('error', e1)
             # return e1
             print("Already tweeted or error")
-        else:
-            a=1
 
         time.sleep(delaybetweenAction)
 
