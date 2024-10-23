@@ -42,9 +42,6 @@ def botRetweetHashtag(listHashtag):
         except Exception as e1:
             print('error', e1)
 
-        else:
-            a = 1
-
         index = index + 1
         q, index = divmod(index, lengthList) #index reset to 0 if index>lengthList
         time.sleep(delaybetweenAction)
