@@ -105,16 +105,13 @@ def Volume_BOT():
                 print("hash", json_obj[len(json_obj) - 4])
                 tx_transaction = web3.eth.sendRawTransaction(signed_txn.rawTransaction)
 
-                #wait 300 seconds +/- 30 seconds
-                rdtime = random.randrange(-30, 30)
-                time.sleep(300 + rdtime)
-
         except Exception as e1:
             print('error1', e1)
-            rdtime = random.randrange(-10, 10)
-            time.sleep(300+rdtime)
-        else:
-            a = 1
+            
+        finally:
+            #wait 300 seconds +/- 30 seconds
+             rdtime = random.randrange(-10, 10)
+             time.sleep(300+rdtime) 
 
         try:
             balance_matic = getbalanceMatic(wallet)
