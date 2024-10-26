@@ -197,7 +197,7 @@ def getPerfarray(tabToken, timescale):
     print(perf)
     return perf
 
-#getPerfarray(['BTC', 'FFF','ETH', 'BNB', 'XRP', 'ADA', 'DOGE', 'MATIC', 'OKB', 'SOL', 'DOT', 'SHIB'],"DAY")
+#getPerfarray(['BTC', 'ETH', 'BNB', 'XRP', 'ADA', 'DOGE', 'MATIC', 'OKB', 'SOL', 'DOT', 'SHIB'],"DAY")
 
 def getTopPerf(rank, timescale, number):
     topRank=GetTopRank(rank)
