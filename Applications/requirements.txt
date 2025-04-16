@@ -1,0 +1,9 @@
+pandas
+requests
+ccxt
+ta
+streamlit
+aiohttp
+plotly
+sklearn
+statsmodels
