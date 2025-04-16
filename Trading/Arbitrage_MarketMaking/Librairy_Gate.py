@@ -2,8 +2,8 @@ from kucoin.client import Client
 import time, hashlib, hmac, requests, json
 from gate_api import ApiClient, Configuration, Order, SpotApi
 
-keyG = "3822f3b5f57a92a6be7cd6ffeefee4a8"
-secretG = '0a7d496b109ac1d6aa8c4ab0be61bd6872d19ed35d22343ea41b201c36498994'
+keyG = ""
+secretG = ''
 
 
 def gen_sign(method, url, query_string=None, payload_string=None):
