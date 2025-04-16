@@ -1,8 +1,8 @@
 from kucoin.client import Client
 
-api_key = "67e15a0a38e2bb0001e95ec1"
-api_secret = '647977fd-936c-4450-80e7-7fa54bbc447e'
-api_passphrase = 'main1BOT'
+api_key = ""
+api_secret = ''
+api_passphrase = ''
 client = Client(api_key, api_secret, api_passphrase)
 
 
