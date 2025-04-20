@@ -12,6 +12,7 @@ CHAIN_ID = int(os.getenv("CHAIN_ID", "1"))  # Default to Ethereum Mainnet
 PRIVATE_KEY = os.getenv("PRIVATE_KEY")
 PUBLIC_ADDRESS = os.getenv("PUBLIC_ADDRESS")
 MY_CONTRACT_ADDRESS = os.getenv("MY_CONTRACT_ADDRESS")
+ABI_NAME = os.getenv("MY_ABI_NAME")
 
 # === CHAINLINK FEEDS ===
 CHAINLINK_FEEDS = {
