@@ -11,6 +11,7 @@ CHAIN_ID = int(os.getenv("CHAIN_ID", "1"))  # Default to Ethereum Mainnet
 # === PRIVATE KEYS / ACCOUNTS ===
 PRIVATE_KEY = os.getenv("PRIVATE_KEY")
 PUBLIC_ADDRESS = os.getenv("PUBLIC_ADDRESS")
+MY_CONTRACT_ADDRESS = os.getenv("MY_CONTRACT_ADDRESS")
 
 # === CHAINLINK FEEDS ===
 CHAINLINK_FEEDS = {
@@ -21,3 +22,4 @@ CHAINLINK_FEEDS = {
 # === GENERAL CONFIG ===
 GAS_LIMIT = int(os.getenv("GAS_LIMIT", 300000))
 GAS_PRICE_GWEI = int(os.getenv("GAS_PRICE_GWEI", 5))
+
